@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-text-color : #183b56;
+    --secendary-text-color : #577592;
+    --accent-color : #2294ed;
+    --accent-color-dark : #1d69a3;
+    --padding-inline-section : 20px;
+    --primary-font : 'Raleway', 'sans-serif';
+    --secondary-font : 'Roboto', 'sans-serif';
+}
+
+/* RESETS */
+
+body{
+    font-family: var(--primary-font);
+    color: var(--primary-text-color);
+    background: url(./imgs/Home\ Page\ before\ login\ full\ length.png) center center fixed;
+    background-size: 100%;
+    width: 100%;
+}
+
+p{
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 1.25rem;
+    color: var(--secendary-text-color);
+    line-height: 1.8rem;;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul{
+    list-style: none;
+}
+
+/* UTILITIES */
+
+.flex{
+    display: flex;
+}
+
+/* NAVIGATION BAR */
+
+nav{
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--secondary-font);
+    background-color: white;
+    height: 8vh;
+}
+
+.company-logo img{
+    width: 20vw;
+    padding-left: 5vw;
+}
+
+.nav-links{
+    font-size:1.3vw;
+    padding-right: 5vw;
+}
+
+.options{
+    padding-right: 4vw;
+    color: black;
+    font-weight: 500;
+}
+
+.login-button{
+    background-color: #5ac6b5;
+    color: white;
+    width: 6vw;
+    height: 4.5vh;
+    align-items: center;
+    text-align: center;
+    border-radius: 6px;
+    padding-top: 4.5px;
+    font-weight: 500;
+}
+
+/* BODY */
+
+.container{
+    flex-direction: column;
+    background-color: #C1FFFF;
+    /* background-color: rgba(0, 0, 0, 0.25); */
+    opacity: 0.60;
+    border-radius: 50px;
+    height: 80vh;
+    width: 90vw;
+    margin-left: 5vw;
+    margin-top: 6vh;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    }
+
+.body-content{
+    flex-direction: column;
+    opacity: 100;
+    background-color: none;
+    position: absolute;
+    top: 10vh;
+    left: 23vw;
+    align-items: center;
+    text-align: center;
+    font: var(--primary-font);
+}
+
+.body-heading{
+    font-size: 4.1rem;
+    word-spacing: 0.8rem;
+    font-style: italic;
+    padding-top: 200px;
+    font-weight: 600;
+    background-image: linear-gradient(90deg, #F38B12, #F21515, #F8E607);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.body-content p{
+    font-size: 2.4rem;
+    color: #676666;
+    padding-top: 40px;
+    font-weight: 500;
+    padding: 40px 0px 0px 50px;
+    font-style: italic;
+    opacity: 100;
+}
+
+.container-buttons{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.seek-inspiration{
+    border-radius: 30px;
+    color: white;
+    background-color: #f8a10d;
+    width: 21rem;
+    height: 3.7rem;
+    align-items: center;
+    padding-top: 15.5px;
+    margin-top: 80px;
+    margin-right: 40px;
+}
+
+.how-it-works{
+    border-radius: 30px;
+    border: 4px solid #f8a10d;
+    background-color: #ffffff;
+    width: 21rem;
+    height: 3.7rem;
+    align-items: center;
+    padding-top: 12.5px;
+    color: black;
+}
