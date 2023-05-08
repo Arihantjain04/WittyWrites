@@ -22,6 +22,8 @@ body{
     background: url(./imgs/Home\ Page\ before\ login\ full\ length.png) center center fixed;
     background-size: 100%;
     width: 100%;
+    transition: 0.5s ease-in;
+
 }
 
 p{
@@ -65,6 +67,9 @@ nav{
     font-size:1.3vw;
     padding-right: 5vw;
 }
+.options:hover{
+    color: orange;
+}
 
 .options{
     padding-right: 4vw;
@@ -84,40 +89,40 @@ nav{
     font-weight: 500;
 }
 
+.login-button:hover{
+    opacity: 0.8;
+}
+
 /* BODY */
 
 .container{
     flex-direction: column;
-    background-color: #C1FFFF;
-    /* background-color: rgba(0, 0, 0, 0.25); */
-    opacity: 0.60;
+    background-color: rgba(193, 255, 255, 0.6);
     border-radius: 50px;
-    height: 80vh;
-    width: 90vw;
-    margin-left: 5vw;
-    margin-top: 6vh;
+    background-size: contain;
+    margin-inline: 4rem;
+    margin-block: 8.5vh;
     align-items: center;
-    text-align: center;
-    position: relative;
-    }
+    height: 75vh;
+}
 
 .body-content{
     flex-direction: column;
-    opacity: 100;
+    justify-content: center;
+    align-items: center;
     background-color: none;
-    position: absolute;
-    top: 0vh;
-    left: 19vw;
     align-items: center;
     text-align: center;
     font: var(--primary-font);
+    position: relative;
+    z-index: 8999;
 }
 
 .body-heading{
     font-size: 3.5rem;
     word-spacing: 0.8rem;
     font-style: italic;
-    padding-top: 200px;
+    padding:16% 0px 3%;
     font-weight: 600;
     background-image: linear-gradient(90deg, #F38B12, #F21515, #F8E607);
     background-clip: text;
@@ -128,11 +133,8 @@ nav{
 .body-content p{
     font-size: 2rem;
     color: #676666;
-    padding-top: 40px;
     font-weight: 500;
-    padding: 40px 0px 0px 50px;
     font-style: italic;
-    opacity: 100;
 }
 
 .container-buttons{
@@ -152,6 +154,10 @@ nav{
     margin-right: 40px;
 }
 
+.seek-inspiration:hover{
+    opacity: 0.8;
+}
+
 .how-it-works{
     border-radius: 30px;
     border: 3px solid #f8a10d;
@@ -161,4 +167,8 @@ nav{
     align-items: center;
     padding-top: 12.5px;
     color: black;
+}
+
+.how-it-works:hover{
+    opacity: 0.8;
 }
